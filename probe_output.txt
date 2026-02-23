@@ -1,0 +1,22 @@
+
+--- Testing Original V4 UpstreamDownstream ---
+URL: https://api.epa.gov/waters/v4/upstreamdownstream
+EXCEPTION: HTTPSConnectionPool(host='api.epa.gov', port=443): Read timed out. (read timeout=10)
+
+--- Testing Watersgeo UpstreamDownstream ---
+URL: https://watersgeo.epa.gov/arcgis/rest/services/NHDPlus/NHDPlus_V2_1/MapServer/exts/NHDPlus_V2_1/UpstreamDownstream
+Status: 200
+Response start: {"error":{"code":404,"message":"Service NHDPlus/NHDPlus_V2_1/MapServer not found ","details":[]}}
+WARNING: JSON parseable but no obvious output/features
+
+--- Testing Watersgeo PointIndexing Service ---
+URL: https://watersgeo.epa.gov/arcgis/rest/services/NHDPlus/NHDPlus_V2_1/MapServer/exts/NHDPlus_V2_1/Service
+Status: 200
+Response start: {"error":{"code":404,"message":"Service NHDPlus/NHDPlus_V2_1/MapServer not found ","details":[]}}
+WARNING: JSON parseable but no obvious output/features
+
+--- Testing Watersgeo PointIndexing Endpoint Direct ---
+URL: https://watersgeo.epa.gov/arcgis/rest/services/NHDPlus/NHDPlus_V2_1/MapServer/exts/NHDPlus_V2_1/PointIndexing
+Status: 200
+Response start: {"error":{"code":404,"message":"Service NHDPlus/NHDPlus_V2_1/MapServer not found ","details":[]}}
+WARNING: JSON parseable but no obvious output/features
